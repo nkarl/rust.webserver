@@ -62,10 +62,10 @@ For now, our handling of the stream consists of calling `unwrap` to terminate ou
 
 Let's try running this code! Invoke `cargo run` in the terminal and then load `127.0.0.1:7878` in a web browser. The browser should show an error message like "Connection reset," because the server isn't currently sending back any data. But when you look at your terminal, you should see several messages that were printed when the browser connected to the server!
 
-     Running `target/debug/hello`
-Connection established!
-Connection established!
-Connection established!
+    Running `target/debug/hello`
+    Connection established!
+    Connection established!
+    Connection established!
 
 Sometimes, you'll see multiple messages printed for one browser request; the reason might be that the browser is making a request for the page as well as a request for other resources, like the favicon.ico icon that appears in the browser tab.
 
